@@ -1,0 +1,12 @@
+{% extends 'template.html' %}
+
+{% block title %} Nёrds: Shops {% endblock %}
+
+
+{% block hero %}
+ {% include 'layout/hero/hero-shops/hero-shops.html' %}
+{% endblock %}
+
+{% block content %}
+ {% include 'components/shopspage/catalog.html' %}
+{% endblock %}

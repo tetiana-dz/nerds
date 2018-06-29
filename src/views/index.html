@@ -1,0 +1,12 @@
+{% extends 'template.html' %}
+
+{% block title %} Nёrds: Main page {% endblock %}
+
+
+{% block hero %}
+ {% include 'layout/hero/hero-main/hero-main.html' %}
+{% endblock %}
+
+{% block content %}
+ {% include 'components/homepage/features/features.html' %}
+{% endblock %}

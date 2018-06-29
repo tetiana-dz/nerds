@@ -1,0 +1,123 @@
+
+
+.catalog-form-wrap {
+    width: 260px;
+
+    @include small {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+.catalog-form {
+
+    @include medium {
+        position: fixed;
+    }
+
+    @include small {
+        display: none;
+        position: static;
+        margin-top: 20px;
+    }
+}
+
+.catalog-mobile-btn-wrap {
+    display: none;
+
+    @include small {
+        display: block;
+    }
+}
+
+.mobile-btn {
+    width: 100%;
+    background: $light-red;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.catalog-section__title {
+    color: #000;
+    line-height: 9px;
+    @include font(bold);
+    // @include rem(17.98);
+    text-transform: uppercase;
+    text-align: left;
+
+}
+
+.catalog-form-price-slider-wrap {
+    margin-top: 56px;
+}
+
+.catalog-form-slider {
+    width: 260px;
+    height: 80px;
+    background: #eeeeee;
+    border-radius: 3px;
+}
+
+
+.catalog-form-input-wrap {
+    display: flex;
+    margin-top: 12px;
+}
+
+.catalog-form-price-input:not(:first-child) {
+    margin-left: 33px;
+
+}
+
+
+.catalog-form-input__textfield {
+    width: 80px;
+    height: 38px;
+}
+
+.catalog-form-radios-wrap {
+    margin-top: 62px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+
+.catalog-form-checkboxes-wrap {
+    margin-top: 52px;
+}
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.form-btn-wrap {
+    margin-top: 48px;
+}
+
+.form-main-btn {
+    width: 260px;
+    color: #000;
+    background: #eeeeee;
+    border-radius: 3px;
+    padding: 16px 88px;
+    line-height: 6px;
+}
+
+.form-main-btn:hover {
+    background: #dfdfdf; 
+
+}
+
+
+.form-main-btn:active {
+    color: #959595;
+    background: #d5d5d5;
+    box-shadow: inset 0 3px 0 0 #bfbfbf;
+}

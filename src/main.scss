@@ -1,0 +1,38 @@
+@import "../node_modules/normalize-scss/sass/normalize/import-now";
+@import "common/libs/fontawesome/fontawesome-all";
+@import "common/misc/fonts";
+@import "common/misc/env";
+@import "common/misc/mixins";
+@import "common/misc/adjustment";
+
+/**
+
+** Layout (тут буде hero, header, nav, footer)
+
+**/
+
+@import "layout/hero/hero-main/hero-main";
+@import "layout/hero/hero-main/hero-slider";
+@import "layout/hero/hero-shops/hero-shops";
+@import "layout/header/header";
+@import "layout/nav/nav";
+@import "layout/footer/footer";
+
+
+/**
+
+** Homepage (все що в maincontent на index сторінці)
+
+**/
+
+@import "components/homepage/features/features";
+
+
+/**
+
+** Shopspage (все що в maincontent на другій сторінці)
+
+**/
+
+@import "components/shopspage/catalog";
+@import "components/shopspage/form/form";

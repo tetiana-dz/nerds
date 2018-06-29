@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $basic-font-size + px;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Regular', sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+.maincontent {
+    flex: 1 0;
+}
+
+.reset-btn {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.ui-btn {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    @include rem(16);
+    @include font(medium);  
+}
+
+
+
