@@ -1,0 +1,7 @@
+.header {
+    text-transform: uppercase;
+    padding-top: 50px;
+    @include medium {
+        padding-top: 20px;
+    }
+}

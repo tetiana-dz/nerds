@@ -1,3 +1,4 @@
+    <div class="catalog-form-block">
     <div class="catalog-form-wrap">
 
             <div class="catalog-mobile-btn-wrap">
@@ -8,129 +9,23 @@
 
             <form class="catalog-form" id="main-form">
 
-                <div class="catalog-form-price-wrap">
-
-                    <span class="catalog-form-price__title catalog-section__title">Стоимость:</span>
-
-                    <div class="catalog-form-price-slider-wrap">
-                        <div class="catalog-form-slider">
-
-                        </div>
-
-                        <div class="catalog-form-input-wrap">
-
-                            <div class="catalog-form-price-input">
-                                <span class="catalog-form-price__min-value">От</span>
-                                <input type="text" name="min-price" id="min-price" value="0" class="catalog-form-price__min-value--textfied catalog-form-input__textfield">
-                            </div> 
-
-                            <div class="catalog-form-price-input">
-                                <span class="catalog-form-price__max-value">До</span>
-                                <input type="text" name="max-price" id="max-price" value="15000" class="catalog-form-price__max-value--textfied catalog-form-input__textfield">
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="catalog-form-radios-wrap">
-
-                    <span class="catalog-form-radios__title catalog-section__title">Сетка:</span>
-
-                    <div class="сatalog-form-radios">
-
-                        <div class="catalog-form-radio__descr">
-                            <label for="radio-1" class="catalog-form-radio__label">
-                                <input type="radio" name="radio" id="radio-1" class="catalog-form-radio___value">
-                                <span class="catalog-form-radio___descr-title">Адаптивная</span>
-                            </label>
-                        </div>
-
-                        <div class="catalog-form-radio__descr">
-                            <label for="radio-2" class="catalog-form-radio__label">
-                                <input type="radio" name="radio" id="radio-2" class="catalog-form-radio___value">
-                                <span class="catalog-form-radio___descr-title">Фиксированная</span>
-                            </label>
-                        </div>
-
-                        <div class="catalog-form-radio__descr">
-                            <label for="radio-3" class="catalog-form-radio__label">
-                                <input type="radio" name="radio" id="radio-3" class="catalog-form-radio___value">
-                                <span class="catalog-form-radio___descr-title">Резиновая</span>
-                            </label>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="catalog-form-checkboxes-wrap">
-
-                    <span class="catalog-form-checkboxes__title catalog-section__title">Особенности:</span>
-
-                    <div class="сatalog-form-checkboxes">
-
-                            <div class="catalog-form-checkbox__descr">
-                                <label for="checkbox-1" class="catalog-form-checkbox__label">
-                                    <input type="checkbox" name="checkbox" id="checkbox-1" class="catalog-form-checkbox___value">
-                                    <span class="catalog-form-checkbox___descr-title">Слайдер</span>
-                                </label>
-                            </div>
-
-                            <div class="catalog-form-checkbox__descr">
-                                <label for="checkbox-2" class="catalog-form-checkbox__label">
-                                    <input type="checkbox" name="checkbox" id="checkbox-2" class="catalog-form-checkbox___value">
-                                    <span class="catalog-form-checkbox___descr-title">Блок преимуществ</span>
-                                </label>
-                            </div>
-
-                            <div class="catalog-form-checkbox__descr">
-                                <label for="checkbox-3" class="catalog-form-checkbox__label">
-                                    <input type="checkbox" name="checkbox" id="checkbox-3" class="catalog-form-checkbox___value">
-                                    <span class="catalog-form-checkbox___descr-title">Новости</span>
-                                </label>
-                            </div>
-                            
-                            <div class="catalog-form-checkbox__descr">
-                                <label for="checkbox-4" class="catalog-form-checkbox__label">
-                                    <input type="checkbox" name="checkbox" id="checkbox-4" class="catalog-form-checkbox___value">
-                                    <span class="catalog-form-checkbox___descr-title">Галерея</span>
-                                </label>
-                            </div>
-
-                            <div class="catalog-form-checkbox__descr">
-                                <label for="checkbox-5" class="catalog-form-checkbox__label">
-                                    <input type="checkbox" name="checkbox" id="checkbox-5" class="catalog-form-checkbox___value">
-                                    <span class="catalog-form-checkbox___descr-title">Корзина</span>
-                                </label>
-                            </div>
-                    </div>
-
-                </div>
-
-                <div class="form-btn-wrap">
-                    <button type="submit" class="form-main-btn ui-btn reset-btn">
-                        Показать
-                    </button>
-                </div>
-
+            {% include 'components/shopspage/form/form-slider/form-slider.html' %}
+            {% include 'components/shopspage/form/form-radios/form-radios.html' %}
+            {% include 'components/shopspage/form/form-checkboxes/form-checkboxes.html' %}
+            {% include 'components/shopspage/form/form-btn/form-btn.html' %}
+            
             </form>
             
             <script>
                 function myFunction() {
                     let x = document.getElementById("main-form");
-                    if (screen.width <= 576 && x.style.display === "none") {
+                    if (x.style.display === "none") {
                         x.style.display = "block";
                     } else {
                         x.style.display = "none";
-
-                        if (screen.width > 576) {
-                            x.removeAttribute ('style');
-                        }
                     }
 
                 }
             </script>
     </div>
+</div>    

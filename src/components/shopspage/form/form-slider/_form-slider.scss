@@ -1,0 +1,81 @@
+.catalog-form-price-slider-wrap {
+    margin-top: 60px;
+}
+
+.catalog-form-slider {
+    width: 260px;
+    height: 80px;
+    background: #eeeeee;
+    position: relative;
+    border-radius: 3px;
+}
+
+.catalog-form-slider:before {
+    content: url(../img/icons/filter-button.svg);
+    position: absolute;
+    top: 37%;
+    left: 5%;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.catalog-form-slider:after {
+    content: url(../img/icons/filter-button.svg);
+    position: absolute;
+    top: 37%;
+    left: 59%;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.catalog-form__scale {
+    content: '';
+    position: absolute;
+    top: 48%;
+    left: 8%;
+    width: 219px;
+    height: 2px;
+    background: #d7dcde; 
+}
+
+.catalog-form__bar {
+    content: '';
+    position: absolute;
+    top: 48%;
+    left: 8%;
+    width: 152px;
+    height: 2px;
+    background: #00ca74;
+}
+
+
+.catalog-form-price-value__title{
+    color: #4d4d4d;
+    @include rem(16);
+    @include font(medium);
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+
+
+.catalog-form-input-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+
+.catalog-form-input__textfield {
+    color: #4d4d4d;
+    width: 80px;
+    height: 38px;
+    border: none;
+    padding: 0 5px 0 5px;
+    background: #eeeeee;
+    border-radius: 3px;
+    @include rem(16);
+    @include font(medium);
+    line-height: 22px;
+    text-align: center;
+}

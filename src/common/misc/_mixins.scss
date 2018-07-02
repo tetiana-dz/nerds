@@ -35,13 +35,17 @@
 
     
     @include extra-large {
-       width: 940px;
+       max-width: 940px;
     }
 
     @include large {
-        width: 712px;
+        max-width: 712px;
     } 
 
+
+    @include medium {
+        width: 100%;
+    }
 
     @include small {
         width: 100%;

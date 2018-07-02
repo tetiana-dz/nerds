@@ -1,0 +1,16 @@
+.hero-shops{
+    background: #eee;
+    &__container {
+        @include container;
+    }
+    &__title {
+        font-family: 'Roboto Medium';
+        font-size: 55px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        padding: 90px 0 115px 0;
+        letter-spacing: 2px;
+        
+    }
+}

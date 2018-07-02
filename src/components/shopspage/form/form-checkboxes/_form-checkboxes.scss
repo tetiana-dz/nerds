@@ -1,0 +1,66 @@
+.catalog-form-checkboxes-wrap {
+    margin-top: 52px;
+}
+
+.сatalog-form-checkboxes {
+    margin-top: 27px;
+}
+
+.catalog-form-checkbox__descr:not(:first-child) {
+    margin-top: 25px;
+}
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.catalog-form-checkbox__label {
+    position: relative;
+    padding-left: 35px;
+}
+
+.catalog-form-checkbox__label:before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: -2px;
+    left: 1px;
+    border: 2px solid #4d4d4d;
+    border-radius: 3px;
+    width: 23px;
+    height: 19px;
+    cursor: pointer;
+
+}
+
+.catalog-form-checkbox__label:hover:before {
+    border: 2px solid #000;
+}
+
+.catalog-form-checkbox___value:checked + .catalog-form-checkbox__label:before {
+    position: absolute;
+    display: inline-block;
+    top: -2px;
+    left: 1px;
+    width: 27px;
+    height: 23px;
+    background: url(../img/icons/checkbox-on.svg) no-repeat;
+    border: none;
+}
+
+.catalog-form-checkbox___value:checked + .catalog-form-checkbox__label:hover:before {
+    background-image: url(../img/icons/checkbox-on-2.svg);
+}
+.catalog-form-checkbox___descr-title {
+    color: #4d4d4d;
+    @include rem(16);
+    @include font(medium);
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.catalog-form-checkbox___descr-title:hover {
+    color: #000;
+}
+

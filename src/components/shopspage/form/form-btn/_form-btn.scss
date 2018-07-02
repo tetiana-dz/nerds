@@ -1,0 +1,23 @@
+.form-btn-wrap {
+    margin-top: 48px;
+}
+
+.form-main-btn {
+    color: #000;
+    background: #eeeeee;
+    border-radius: 3px;
+    padding: 18px 89px;
+    line-height: 15px;
+}
+
+.form-main-btn:hover {
+    background: #dfdfdf; 
+
+}
+
+
+.form-main-btn:active {
+    color: #959595;
+    background: #d5d5d5;
+    box-shadow: inset 0 3px 0 0 #bfbfbf;
+}

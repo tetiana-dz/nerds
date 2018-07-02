@@ -1,0 +1,6 @@
+.hero {
+    background: #eee;
+    &__container {
+        @include container;
+    }
+}
