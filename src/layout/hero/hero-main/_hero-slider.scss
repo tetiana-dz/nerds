@@ -6,6 +6,19 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content:center;
+
+    @include large {
+        background-position: left;
+    }
+
+    @include medium {
+        align-items: center;
+        background-position: center;
+    }
+
+    @include extra-small {
+        background: none;
+    }
     
     &__title {
         margin: 0;
@@ -13,6 +26,13 @@
         font-family: 'Roboto Medium' sans-serif;
         font-size: 55px;
         width: 480px;
+        @include medium {
+            @include rem(45);
+            text-align: center;
+        }
+        @include small {
+            width: 100%;
+        }
         
     }
 
@@ -23,12 +43,34 @@
         margin-top: 40px;
         width: 410px;
         line-height: 20px;
+        @include medium {
+            @include rem(14);
+            text-align: center;
+        }
+
+        @include small {
+            width: 100%;
+        }
     }
     &__btn {
         background: #fb565a;
         padding: 17px 50px;
         border-radius: 3px;
         margin-top: 50px;
+
+        &:hover {
+            background: $coolton-red;
+        }
+        &:active {
+            background: #d7373b;
+            box-shadow: inset 0 3px 0 0 #c13135;
+            color: #e37376;
+        }
+
+        @include medium {
+            @include rem(14);
+
+        }
     }
 
 }

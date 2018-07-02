@@ -30,7 +30,6 @@
 
     @include small {
         display: none;
-        position: static;
         margin-top: 20px;
     }
 }
@@ -65,9 +64,3 @@
     text-align: left;
 
 }
-
-
-
-
-
-

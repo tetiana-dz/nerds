@@ -12,5 +12,12 @@
         padding: 90px 0 115px 0;
         letter-spacing: 2px;
         
+        @include small {
+            font-size: 40px;
+        }
+        @include extra-small {
+            font-size: 34px;
+        }
+        
     }
 }

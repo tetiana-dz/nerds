@@ -1,0 +1,137 @@
+.sort-panel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // border: solid 1px black;
+    padding-bottom: 60px;
+
+    @include extra-large {
+        // justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    @include large {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        justify-content: center;
+    }
+
+    @include small {
+        width: 75%;
+        justify-content: center; 
+        margin: 0 auto;   
+    }
+}
+
+.sorting-name {
+    // border: solid 1px black;
+    @include rem(18);
+    @include font(bold);
+    // font-size: 18px;
+    color: #000;
+    width: 20%;
+    line-height: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @include large {
+        text-align: center;
+        width: 40%;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+    @include small {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;    
+    }
+    
+}
+
+.sort-by-wrap {
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+    // border: solid 1px blue;
+
+    @include extra-large {
+        width: 47%;
+    }
+
+    @include large {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    @include small {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.sort-by {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    // border: solid 1px black;
+
+    @include large {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px; 
+    }
+
+    @include small {       
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+}
+
+.sort-by li:not(:last-child) {
+    margin-right: 20px;
+
+    @include extra-large {
+        margin-right: 10px;
+    }
+}
+
+.sort-by a {
+    text-decoration: none;
+    text-transform: uppercase;
+    @include rem(13.99);
+    @include font(reg);
+    // font-size: 14px;
+    line-height: 18px;
+    // font-weight: 500;
+    color: #b2b2b2;
+}
+
+.sort-by .active-filter {
+    color: #111;
+}
+
+.sort-direction {
+    // border: solid 1px black; 
+    width: 12%;
+    display: flex;
+    justify-content: space-between; 
+
+    @include extra-large {
+        width: 9%;
+
+    }
+
+    @include large {
+        margin: 0 auto;
+    }
+
+    @include small {       
+        margin: 0 auto;
+    }
+}

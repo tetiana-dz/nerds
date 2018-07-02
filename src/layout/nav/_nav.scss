@@ -77,6 +77,9 @@
                 margin-left: 5px;
                 display: none;
             }
+            @include large {
+                display: none;
+            }
         }
     }
 
@@ -118,34 +121,4 @@
             }
         }
     }
-}
-
-
-
-.header__list {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__item:not(:last-child) {
-    margin-right: 40px;
-}
-
-.header__link {
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #000000;
-    font-weight: 500;
-    position: relative;
-}
-
-.header__link:hover {
-    color: #fb565a;
-}
-
-.header__link:active {
-    color: #a6a6a6;
 }
